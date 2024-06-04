@@ -3,7 +3,8 @@ import "./task.css";
 /**
  * Primary UI component for user interaction
  */
-export const Task = ({ title: string, description, complete, ...props }) => {
+
+export const Task = ({ title, description, complete, ...props }) => {
   const mode = complete
     ? ["storybook-task--complete", "task-box-complete"]
     : ["storybook-task--incomplete", "task-box-incomplete"];

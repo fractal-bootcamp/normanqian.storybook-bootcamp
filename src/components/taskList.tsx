@@ -2,11 +2,17 @@ import { useState } from "react";
 import { Task } from "./Task";
 import "./taskList.css";
 
-const fakeTasks = [
+interface Task {
+  title: string;
+  description: string;
+  complete: boolean;
+}
+
+const fakeTasks: Task[] = [
   { title: "cleaning", description: "clean floor", complete: false },
-  { title: "cleaning", description: "clean floor", complete: false },
-  { title: "cleaning", description: "clean floor", complete: false },
-  { title: "cleaning", description: "clean floor", complete: false },
+  { title: "scrubbing", description: "scrub floor", complete: true },
+  { title: "sweeping", description: "sweep floor", complete: false },
+  { title: "mopping", description: "mop floor", complete: true },
 ];
 
 const TaskList = () => {
@@ -23,7 +29,8 @@ const TaskList = () => {
       return task;
     });
 
-    setTasks(newTasks);
+    // setTasks(÷newTasks);
+    setTasks(newTasks.sort((b, a) => Number(a.complete) - Number(b.complete)));
   };
 
   return (
