@@ -17,63 +17,63 @@
   border: 1px solid #d8d8d8;
   border-radius: 8px;
 }
+.task-box-complete {
+  box-sizing: border-box;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #359845;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  top: 35%;
+  left: 5%;
+}
+.task-box-incomplete {
+  box-sizing: border-box;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  top: 35%;
+  left: 5%;
+}
 
-/* Rectangle 4 */
-/*
+.textcontainer {
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
 
-box-sizing: border-box;
+.text0 {
+  position: relative;
+  width: 365px;
+  height: 27px;
 
-position: absolute;
-width: 25px;
-height: 25px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
 
-background: #359845;
-border: 1px solid #d8d8d8;
-border-radius: 8px;
+  color: #000000;
+}
 
-/* Rectangle 2 */
+.text1 {
+  position: relative;
+  width: 365px;
+  height: 27px;
 
-/*
-box-sizing: border-box;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
 
-position: absolute;
-width: 25px;
-height: 25px;
-
-background: #ffffff;
-border: 1px solid #d8d8d8;
-border-radius: 8px;
-
-/* Sweep the Kitchen */
-
-/*
-position: absolute;
-width: 365px;
-height: 27px;
-
-font-family: "Inter";
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-display: flex;
-align-items: center;
-
-color: #000000;
-
-/* Get under the cabinets, do a good job */
-
-/*
-position: absolute;
-width: 365px;
-height: 27px;
-
-font-family: "Inter";
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-display: flex;
-align-items: center;
-
-color: #7d7d7d;
+  color: #7d7d7d;
+}

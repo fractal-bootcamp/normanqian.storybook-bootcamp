@@ -32,15 +32,19 @@ export const Task = ({
   ...props
 }: TaskProps) => {
   const mode = completed
-    ? "storybook-task--complete"
-    : "storybook-task--incomplete";
+    ? ["storybook-task--complete", "task-box-complete"]
+    : ["storybook-task--incomplete", "task-box-incomplete"];
   return (
     <div
-      className={["storybook-task", mode].join(" ")}
+      className={["storybook-task", mode[0]].join(" ")}
       style={{ backgroundColor }}
       {...props}
     >
-      {label}
+      <div className={mode[1]}></div>
+      <div className="textcontainer">
+        <div className="text0">Sweep the Kitchen</div>
+        <div className="text1">Get under the cabinets, do a good job</div>
+      </div>
     </div>
   );
 };
