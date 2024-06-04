@@ -1,10 +1,10 @@
 import "./App.css";
-import { Task } from "./components/Task";
+import TaskList from "./components/taskList";
 
 function App() {
   return (
     <div>
-      <Task label="hello" />
+      <TaskList />
     </div>
   );
 }
