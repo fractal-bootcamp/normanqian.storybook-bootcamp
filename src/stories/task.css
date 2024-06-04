@@ -1,0 +1,79 @@
+.storybook-task {
+  position: relative;
+  width: 462px;
+  height: 77px;
+}
+.storybook-task--complete {
+  /* Rectangle 3 */
+
+  background: #e2ffe5;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+}
+.storybook-task--incomplete {
+  /* Rectangle 1 */
+
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+}
+
+/* Rectangle 4 */
+/*
+
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+height: 25px;
+
+background: #359845;
+border: 1px solid #d8d8d8;
+border-radius: 8px;
+
+/* Rectangle 2 */
+
+/*
+box-sizing: border-box;
+
+position: absolute;
+width: 25px;
+height: 25px;
+
+background: #ffffff;
+border: 1px solid #d8d8d8;
+border-radius: 8px;
+
+/* Sweep the Kitchen */
+
+/*
+position: absolute;
+width: 365px;
+height: 27px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+/* Get under the cabinets, do a good job */
+
+/*
+position: absolute;
+width: 365px;
+height: 27px;
+
+font-family: "Inter";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+
+color: #7d7d7d;
