@@ -1,5 +1,5 @@
 import "./App.css";
-import MessageThread from "./components/MessageThread";
+import Post from "./components/post";
 
 type isOutgoing = boolean;
 type content = string;
@@ -7,6 +7,17 @@ type id = number;
 type message = { content: content; id: id };
 type messageThread = { messages: message[]; isOutgoing: boolean };
 
+function App() {
+  return (
+    <div>
+      <Post />
+    </div>
+  );
+}
+
+export default App;
+
+/*
 const fakedata: messageThread = {
   messages: [
     { content: "firstmessage", id: 0 },
@@ -16,19 +27,22 @@ const fakedata: messageThread = {
         "lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor ametlorem ipsum sit dolor amet lorem ipsum sit dolor amet",
       id: 2,
     },
+    {
+      content:
+        "lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor ametlorem ipsum sit dolor amet lorem ipsum sit dolor amet",
+      id: 2,
+    },
+    {
+      content:
+        "lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor ametlorem ipsum sit dolor amet lorem ipsum sit dolor amet",
+      id: 2,
+    },
+    {
+      content:
+        "lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor amet lorem ipsum sit dolor ametlorem ipsum sit dolor amet lorem ipsum sit dolor amet",
+      id: 2,
+    },
   ],
   isOutgoing: true,
 };
-
-function App() {
-  return (
-    <div>
-      <MessageThread
-        messages={fakedata.messages}
-        isOutgoing={fakedata.isOutgoing}
-      />
-    </div>
-  );
-}
-
-export default App;
+*/

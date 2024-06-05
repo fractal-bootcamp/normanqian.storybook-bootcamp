@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.name {
+  text-align: left;
+}
+.header {
+  color: #828282;
+  text-align: left;
+}
+.time {
+  color: #828282;
+  text-align: left;
+}
+.image {
+  height: 400px;
+  width: 400px;
+  text-align: left;
+}
+.description {
+  text-align: left;
+}
+.icontext {
+  text-align: left;
+}
+
+/* 3 min ago */
